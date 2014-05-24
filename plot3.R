@@ -13,6 +13,16 @@ NEI$year <- as.numeric(NEI$year)
 totalPerYear <- ddply(NEI[NEI$fips == "24510",], c("year", "type"), 
                       function(df)sum(df$Emissions, na.rm=TRUE))
 
-#png(filename="plot3.png", width=480, height=480)
-ggplot(data=totalPerYear
-#dev.off()
+head(totalPerYear)
+png(filename="plot3.png", width=480, height=480)
+ggplot(data=totalPerYear, aes(x=year, y=V1, group=type, colour=type)) +
+  geom_line() +
+  xlab("Year") +
+  ylab("PM2.5 (tons)") +
+  ggtitle("PM2.5 vs. Year by Source Type")
+dev.off()
+
+
+
+
+
