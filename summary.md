@@ -25,12 +25,6 @@ Exploratory Data Analysis Project 2 Summary
 
 ![plot4.png](plot4.png)
 
-**Plot 4**
-
-[plot4.R](plot4.R)
-
-![plot4.png](plot4.png)
-
 **Plot 5**
 
 [plot5.R](plot5.R)
